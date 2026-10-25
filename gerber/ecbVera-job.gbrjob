@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.2"
     },
-    "CreationDate": "2026-10-10T19:20:20-05:00"
+    "CreationDate": "2026-10-24T20:00:49-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "ecbVera",
       "GUID": "65636256-6572-4612-9e6b-696361645f70",
-      "Revision": "rev?"
+      "Revision": "Ver 1.1"
     },
     "Size": {
       "X": 160.401,

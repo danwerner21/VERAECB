@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1)
+    (start_pass_no 15)
     (layer_rule "F.Cu"
       (active on)
       (preferred_direction horizontal)
@@ -29,7 +29,6 @@
     (width 200.0)
     (clear 200.0)
     (clear 100.0 (type smd_to_turn_gap))
-    (clear 50.0 (type "smd"-"smd"))
   )
   (padstack "Via[0-1]_600:300_um"
     (shape
@@ -66,7 +65,7 @@
     "Net-(C28-Pad1)" "PD0" "B_A7" "B_D1" "B_D4" "PD1" "PD2" "B_A6"
     "B_D0" "B_A5" "B_A4" "B_D2" "B_D5" "B_D3" "B_D6" "B_D7"
     "PD3" "PD4" "PD5" "B_A3" "B_A2" "B_A1" "B_A0" "PD6"
-    "PD7" "Net-(JP1-Pin_2)" "~{RES}" "B_~{IR0}" "Net-(K1-Pin_2)" "B_~{INT}" "unconnected-(P5-Pin_26-Pad26)" "~{BUSY}"
+    "PD7" "Net-(JP1-Pin_2)" "~{RES}" "B_~{IR0}" "unconnected-(RR2-R9-Pad10)" "B_~{INT}" "unconnected-(P5-Pin_26-Pad26)" "~{BUSY}"
     "ACK" "PAPEROUT" "ERROR" "~{SEL}" "~{LINEFEED}" "SELECT" "~{STROBE}" "P-RESET"
     "unconnected-(P6-Pad1)" "Net-(U3-X2)" "unconnected-(P6-Pad3)" "unconnected-(P6-Pad2)" "unconnected-(P6-Pad12)" "unconnected-(P6-Pad13)" "unconnected-(P7-Pin_1-Pad1)" "MSEDAT"
     "unconnected-(P7-Pin_2-Pad2)" "unconnected-(P7-Pin_7-Pad7)" "MSECLK" "unconnected-(P7-Pin_9-Pad9)" "unconnected-(P7-Pin_10-Pad10)" "unconnected-(P7-Pin_5-Pad5)" "unconnected-(P8-Pin_2-Pad2)" "KBDCLK"
@@ -74,8 +73,8 @@
     "P21" "P13" "P20" "P17" "P14" "P16" "Net-(U10-O0)" "Net-(U10-O2)"
     "Net-(U10-O4)" "Net-(U10-O6)" "Net-(U10-O1)" "Net-(U10-O3)" "Net-(U10-O5)" "Net-(U10-O7)" "Net-(R9-Pad2)" "Net-(RR1-R7)"
     "PU4" "PU3" "Net-(RR1-R8)" "PU5" "PU2" "Net-(RR1-R9)" "PU7" "PU6"
-    "B_~{IR7}" "unconnected-(RR2-R5-Pad6)" "B_~{IR2}" "PU1" "~{INT}" "PU8" "PROG" "Net-(U3-P23)"
-    "Net-(U3-P26{slash}DRQ)" "Net-(U3-P27{slash}DAK)" "Net-(U3-P22)" "Net-(U1-Pad4)" "unconnected-(U2-Pad11)" "Net-(U5-CE)" "unconnected-(U2-Pad4)" "~{KEYB_PRINTER}"
+    "B_~{IR7}" "unconnected-(RR3-R5-Pad6)" "B_~{IR2}" "PU1" "~{INT}" "PU8" "PROG" "Net-(U3-P23)"
+    "Net-(U3-P26{slash}DRQ)" "Net-(U3-P27{slash}DAK)" "Net-(U3-P22)" "unconnected-(U1-Pad6)" "unconnected-(U2-Pad11)" "Net-(U5-CE)" "unconnected-(U2-Pad4)" "~{KEYB_PRINTER}"
     "~{VERA}" "unconnected-(U2-Pad9)" "unconnected-(U2-Pad13)" "unconnected-(U2-Pad12)" "unconnected-(U2-Pad6)" "unconnected-(U2-Pad8)" "unconnected-(U2-Pad10)" "unconnected-(U2-Pad5)"
     "D4" "~{WR}" "D6" "Net-(U3-CS)" "D5" "A0" "D1" "unconnected-(U3-SYNC-Pad11)"
     "D0" "D7" "Net-(U3-P24{slash}OB)" "Net-(U3-P25{slash}BF)" "unconnected-(U3-SSPP-Pad26)" "D3" "~{RD}" "D2"
@@ -88,13 +87,13 @@
     "B_{slash}TEND" "B_A10" "B_A14" "unconnected-(U6-5B-PadB5)" "B_D8" "B_D13" "B_{slash}MREQ" "B_A19"
     "B_{slash}CLK" "unconnected-(U6-3B-PadB3)" "B_{slash}HALT" "B_{slash}SXTRQ" "B_{slash}NMI" "B_D9" "B_{slash}IR1" "B_A23"
     "B_{slash}BUSAK" "B_DT{slash}R" "unconnected-(U6-23C-PadC23)" "B_A9" "B_A12" "B_A21" "B_{slash}DS1" "B_D10"
-    "B_A11" "B_~{M1}" "B_A15" "B_{slash}IEI" "unconnected-(U7-O3a-Pad12)" "unconnected-(U7-I3a-Pad8)" "A2" "A1"
-    "unconnected-(U7-O0b-Pad9)" "unconnected-(U7-I0b-Pad11)" "unconnected-(U8-Pad12)" "unconnected-(U8-Pad13)" "Net-(U11-O1)" "Net-(U8-Pad11)" "Net-(U11-O3)" "Net-(U11-O0)"
-    "Net-(U11-O2)" "unconnected-(U9-Pad4)" "unconnected-(U9-Pad1)" "unconnected-(U9-Pad3)" "Net-(U14-I1a)" "Net-(U14-I0a)" "unconnected-(U9-Pad2)" "Net-(U14-I3a)"
-    "~{PAROUT0}" "Net-(U10-OE)" "PARINT" "~{PAROUT2}" "unconnected-(U11-O7-Pad19)" "unconnected-(U11-O6-Pad16)" "~{PARIN0}" "~{PARIN1}"
-    "unconnected-(U13-I1a-Pad4)" "unconnected-(U13-I2a-Pad6)" "unconnected-(U13-I0a-Pad2)" "~{PARIN2}" "unconnected-(U14-I1b-Pad13)" "unconnected-(U14-I2b-Pad15)" "unconnected-(U14-I3b-Pad17)" "unconnected-(U20-O0-Pad15)"
-    "unconnected-(U20-O3-Pad12)" "unconnected-(U20-O2-Pad13)" "unconnected-(U20-O1-Pad14)" "unconnected-(U20-O7-Pad7)" "unconnected-(U21-O2-Pad13)" "unconnected-(U21-O1-Pad14)" "unconnected-(U21-O0-Pad15)" "unconnected-(U21-O5-Pad10)"
-    "unconnected-(U21-O7-Pad7)" "unconnected-(U21-O3-Pad12)" "Net-(J1-Pin_14)" "Net-(J1-Pin_23)" "Net-(J1-Pin_24)" "A3" "A4"
+    "B_A11" "B_~{M1}" "B_A15" "B_{slash}IEI" "unconnected-(U1-Pad5)" "A2" "A1" "unconnected-(U8-Pad12)"
+    "unconnected-(U8-Pad13)" "Net-(U11-O1)" "Net-(U8-Pad11)" "Net-(U11-O3)" "Net-(U11-O0)" "Net-(U11-O2)" "unconnected-(U9-Pad4)" "unconnected-(U9-Pad1)"
+    "unconnected-(U9-Pad3)" "Net-(U14-I1a)" "Net-(U14-I0a)" "unconnected-(U9-Pad2)" "Net-(U14-I3a)" "~{PAROUT0}" "Net-(U10-OE)" "PARINT"
+    "~{PAROUT2}" "unconnected-(U11-O7-Pad19)" "unconnected-(U11-O6-Pad16)" "~{PARIN0}" "~{PARIN1}" "unconnected-(U13-I1a-Pad4)" "unconnected-(U13-I2a-Pad6)" "unconnected-(U13-I0a-Pad2)"
+    "~{PARIN2}" "unconnected-(U14-I1b-Pad13)" "unconnected-(U14-I2b-Pad15)" "unconnected-(U14-I3b-Pad17)" "unconnected-(U20-O0-Pad15)" "unconnected-(U20-O3-Pad12)" "unconnected-(U20-O2-Pad13)" "unconnected-(U20-O1-Pad14)"
+    "unconnected-(U20-O7-Pad7)" "unconnected-(U21-O2-Pad13)" "unconnected-(U21-O1-Pad14)" "unconnected-(U21-O0-Pad15)" "unconnected-(U21-O5-Pad10)" "unconnected-(U21-O7-Pad7)" "unconnected-(U21-O3-Pad12)" "Net-(J1-Pin_14)"
+    "Net-(J1-Pin_23)" "Net-(J1-Pin_24)" "A3" "A4"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule

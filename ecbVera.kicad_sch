@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "d9da1c82-d111-45a9-a5a0-97542a9b1801")
 	(paper "A4")
+	(title_block
+		(date "2026-10-24")
+		(rev "V1.1")
+	)
 	(lib_symbols
 		(symbol "74xx:74LS04"
 			(exclude_from_sim no)
@@ -3828,6 +3832,14 @@
 		(uuid "947d5eb9-eb04-41ea-828e-bc40efec4c1b")
 	)
 	(no_connect
+		(at 86.36 78.74)
+		(uuid "9b5af740-bfc3-4b0d-93f5-424b5811250b")
+	)
+	(no_connect
+		(at 71.12 78.74)
+		(uuid "9e5e168a-bafe-4c95-87de-13f3dd1cb3b0")
+	)
+	(no_connect
 		(at 50.8 69.85)
 		(uuid "a459704c-9a17-4418-aef5-5473817141b5")
 	)
@@ -7005,15 +7017,15 @@
 		(dnp no)
 		(uuid "82183219-7008-49a7-b52f-92d89a776f64")
 		(property "Reference" "U1"
-			(at 260.223 113.919 0)
+			(at 255.27 115.316 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "74LS04"
-			(at 260.096 120.015 0)
+		(property "Value" "74LS06"
+			(at 255.016 118.11 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7708,6 +7720,109 @@
 				(path "/d9da1c82-d111-45a9-a5a0-97542a9b1801"
 					(reference "U9")
 					(unit 7)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS04")
+		(at 78.74 78.74 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7ce02e4-1382-4dcb-86d8-a24af0a23220")
+		(property "Reference" "U1"
+			(at 77.724 78.994 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "74LS06"
+			(at 83.566 81.915 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Custom:STD_DDW_DIP14"
+			(at 78.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
+			(at 78.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex Inverter"
+			(at 78.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "14"
+			(uuid "f9d63b56-cdc5-40ff-a20f-4cffe8ef4961")
+		)
+		(pin "7"
+			(uuid "386d4076-714f-494b-a24b-4fb95fa9a42f")
+		)
+		(pin "1"
+			(uuid "f53cbab1-e631-4a16-837f-c22ffb6d28cb")
+		)
+		(pin "2"
+			(uuid "7d6e64d3-fb1c-4195-a508-eeb558f88fea")
+		)
+		(pin "3"
+			(uuid "fc3f8edf-5214-4dcc-9f02-ed596c92feb3")
+		)
+		(pin "4"
+			(uuid "101240c2-fa95-4f6f-85b2-70dcb4d46460")
+		)
+		(pin "5"
+			(uuid "5b877408-ede0-4585-bf61-c9a70811366c")
+		)
+		(pin "6"
+			(uuid "914ed3f5-a56a-46aa-988d-54312f03d596")
+		)
+		(pin "8"
+			(uuid "32ef68a2-d8f3-4446-9956-f56924011933")
+		)
+		(pin "9"
+			(uuid "8df62230-a0da-4c94-8b68-e68ece997570")
+		)
+		(pin "10"
+			(uuid "3f3a71ef-9706-4940-b901-7aef4d735004")
+		)
+		(pin "11"
+			(uuid "b0d83341-ad3d-47b9-ad35-9f8c8d8e62f5")
+		)
+		(pin "12"
+			(uuid "8007b347-098c-4c70-b7fc-dc90329248ed")
+		)
+		(pin "13"
+			(uuid "6051f406-127c-4180-a444-93b0db0a88f0")
+		)
+		(instances
+			(project "ecbVera"
+				(path "/d9da1c82-d111-45a9-a5a0-97542a9b1801"
+					(reference "U1")
+					(unit 3)
 				)
 			)
 		)

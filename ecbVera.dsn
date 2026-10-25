@@ -1456,8 +1456,8 @@
     (net "unconnected-(U1-Pad6)"
       (pins U1-6)
     )
-    (net "unconnected-(U2-Pad11)"
-      (pins U2-11)
+    (net "~{VERASEL}"
+      (pins J1-11 U2-11)
     )
     (net "Net-(U5-CE)"
       (pins U5-19 U2-3)
@@ -1469,25 +1469,25 @@
       (pins U4-4 U20-4 U21-4 U19-19 U2-2)
     )
     (net "~{VERA}"
-      (pins J1-11 U18-19 U2-1)
+      (pins U18-19 U9-3 U2-1 U2-12)
     )
-    (net "unconnected-(U2-Pad9)"
-      (pins U2-9)
+    (net "Net-(U2-Pad10)"
+      (pins U9-2 U2-9 U2-10)
     )
-    (net "unconnected-(U2-Pad13)"
-      (pins U2-13)
+    (net "Net-(U2-Pad13)"
+      (pins U4-11 U2-13)
     )
-    (net "unconnected-(U2-Pad12)"
-      (pins U2-12)
+    (net "Net-(U2-Pad8)"
+      (pins U4-9 U4-10 U2-8)
     )
     (net "unconnected-(U2-Pad6)"
       (pins U2-6)
     )
-    (net "unconnected-(U2-Pad8)"
-      (pins U2-8)
+    (net "Net-(U4-Pad12)"
+      (pins U4-8 U4-12 U4-13)
     )
-    (net "unconnected-(U2-Pad10)"
-      (pins U2-10)
+    (net "Net-(U9-Pad1)"
+      (pins U9-1 U9-4)
     )
     (net "unconnected-(U2-Pad5)"
       (pins U2-5)
@@ -1539,24 +1539,6 @@
     )
     (net D2
       (pins U14-14 J1-8 U12-14 U13-14 U5-16 U10-7 U3-14 U11-7)
-    )
-    (net "unconnected-(U4-Pad8)"
-      (pins U4-8)
-    )
-    (net "unconnected-(U4-Pad13)"
-      (pins U4-13)
-    )
-    (net "unconnected-(U4-Pad9)"
-      (pins U4-9)
-    )
-    (net "unconnected-(U4-Pad12)"
-      (pins U4-12)
-    )
-    (net "unconnected-(U4-Pad10)"
-      (pins U4-10)
-    )
-    (net "unconnected-(U4-Pad11)"
-      (pins U4-11)
     )
     (net "B_{slash}IR3"
       (pins U6-B18)
@@ -1798,23 +1780,11 @@
     (net "Net-(U11-O2)"
       (pins U9-5 U11-6)
     )
-    (net "unconnected-(U9-Pad4)"
-      (pins U9-4)
-    )
-    (net "unconnected-(U9-Pad1)"
-      (pins U9-1)
-    )
-    (net "unconnected-(U9-Pad3)"
-      (pins U9-3)
-    )
     (net "Net-(U14-I1a)"
       (pins U14-4 U9-10)
     )
     (net "Net-(U14-I0a)"
       (pins U14-2 U9-8)
-    )
-    (net "unconnected-(U9-Pad2)"
-      (pins U9-2)
     )
     (net "Net-(U14-I3a)"
       (pins U14-8 U9-12)
@@ -1928,11 +1898,12 @@
       "Net-(U10-O0)" "Net-(U10-O1)" "Net-(U10-O2)" "Net-(U10-O3)" "Net-(U10-O4)"
       "Net-(U10-O5)" "Net-(U10-O6)" "Net-(U10-O7)" "Net-(U10-OE)" "Net-(U11-O0)"
       "Net-(U11-O1)" "Net-(U11-O2)" "Net-(U11-O3)" "Net-(U14-I0a)" "Net-(U14-I1a)"
-      "Net-(U14-I3a)" "Net-(U3-CS)" "Net-(U3-P22)" "Net-(U3-P23)" "Net-(U3-P24{slash}OB)"
-      "Net-(U3-P25{slash}BF)" "Net-(U3-P26{slash}DRQ)" "Net-(U3-P27{slash}DAK)"
-      "Net-(U3-X2)" "Net-(U5-CE)" "Net-(U8-Pad11)" "P-RESET" P12 P13 P14 P15
-      P16 P17 P20 P21 PAPEROUT PARINT PD0 PD1 PD2 PD3 PD4 PD5 PD6 PD7 PROG
-      PU1 PU2 PU3 PU4 PU5 PU6 PU7 PU8 SELECT VCC "unconnected-(P5-Pin_26-Pad26)"
+      "Net-(U14-I3a)" "Net-(U2-Pad10)" "Net-(U2-Pad13)" "Net-(U2-Pad8)" "Net-(U3-CS)"
+      "Net-(U3-P22)" "Net-(U3-P23)" "Net-(U3-P24{slash}OB)" "Net-(U3-P25{slash}BF)"
+      "Net-(U3-P26{slash}DRQ)" "Net-(U3-P27{slash}DAK)" "Net-(U3-X2)" "Net-(U4-Pad12)"
+      "Net-(U5-CE)" "Net-(U8-Pad11)" "Net-(U9-Pad1)" "P-RESET" P12 P13 P14
+      P15 P16 P17 P20 P21 PAPEROUT PARINT PD0 PD1 PD2 PD3 PD4 PD5 PD6 PD7
+      PROG PU1 PU2 PU3 PU4 PU5 PU6 PU7 PU8 SELECT VCC "unconnected-(P5-Pin_26-Pad26)"
       "unconnected-(P6-Pad1)" "unconnected-(P6-Pad12)" "unconnected-(P6-Pad13)"
       "unconnected-(P6-Pad2)" "unconnected-(P6-Pad3)" "unconnected-(P7-Pin_1-Pad1)"
       "unconnected-(P7-Pin_10-Pad10)" "unconnected-(P7-Pin_2-Pad2)" "unconnected-(P7-Pin_5-Pad5)"
@@ -1942,26 +1913,21 @@
       "unconnected-(RR3-R5-Pad6)" "unconnected-(U1-Pad5)" "unconnected-(U1-Pad6)"
       "unconnected-(U11-O6-Pad16)" "unconnected-(U11-O7-Pad19)" "unconnected-(U13-I0a-Pad2)"
       "unconnected-(U13-I1a-Pad4)" "unconnected-(U13-I2a-Pad6)" "unconnected-(U14-I1b-Pad13)"
-      "unconnected-(U14-I2b-Pad15)" "unconnected-(U14-I3b-Pad17)" "unconnected-(U2-Pad10)"
-      "unconnected-(U2-Pad11)" "unconnected-(U2-Pad12)" "unconnected-(U2-Pad13)"
-      "unconnected-(U2-Pad4)" "unconnected-(U2-Pad5)" "unconnected-(U2-Pad6)"
-      "unconnected-(U2-Pad8)" "unconnected-(U2-Pad9)" "unconnected-(U20-O0-Pad15)"
+      "unconnected-(U14-I2b-Pad15)" "unconnected-(U14-I3b-Pad17)" "unconnected-(U2-Pad4)"
+      "unconnected-(U2-Pad5)" "unconnected-(U2-Pad6)" "unconnected-(U20-O0-Pad15)"
       "unconnected-(U20-O1-Pad14)" "unconnected-(U20-O2-Pad13)" "unconnected-(U20-O3-Pad12)"
       "unconnected-(U20-O7-Pad7)" "unconnected-(U21-O0-Pad15)" "unconnected-(U21-O1-Pad14)"
       "unconnected-(U21-O2-Pad13)" "unconnected-(U21-O3-Pad12)" "unconnected-(U21-O5-Pad10)"
       "unconnected-(U21-O7-Pad7)" "unconnected-(U3-SSPP-Pad26)" "unconnected-(U3-SYNC-Pad11)"
-      "unconnected-(U4-Pad10)" "unconnected-(U4-Pad11)" "unconnected-(U4-Pad12)"
-      "unconnected-(U4-Pad13)" "unconnected-(U4-Pad8)" "unconnected-(U4-Pad9)"
       "unconnected-(U6-13A-PadA13)" "unconnected-(U6-15A-PadA15)" "unconnected-(U6-15C-PadC15)"
       "unconnected-(U6-16A-PadA16)" "unconnected-(U6-19A-PadA19)" "unconnected-(U6-23A-PadA23)"
       "unconnected-(U6-23C-PadC23)" "unconnected-(U6-25A-PadA25)" "unconnected-(U6-26A-PadA26)"
       "unconnected-(U6-26C-PadC26)" "unconnected-(U6-2B-PadB2)" "unconnected-(U6-30B-PadB30)"
       "unconnected-(U6-31B-PadB31)" "unconnected-(U6-3B-PadB3)" "unconnected-(U6-4B-PadB4)"
       "unconnected-(U6-5B-PadB5)" "unconnected-(U8-Pad12)" "unconnected-(U8-Pad13)"
-      "unconnected-(U9-Pad1)" "unconnected-(U9-Pad2)" "unconnected-(U9-Pad3)"
-      "unconnected-(U9-Pad4)" "~{BUSY}" "~{INT}" "~{KEYB_PRINTER}" "~{LINEFEED}"
-      "~{PARIN0}" "~{PARIN1}" "~{PARIN2}" "~{PAROUT0}" "~{PAROUT2}" "~{RD}"
-      "~{RES}" "~{SEL}" "~{STROBE}" "~{VERA}" "~{WR}"
+      "~{BUSY}" "~{INT}" "~{KEYB_PRINTER}" "~{LINEFEED}" "~{PARIN0}" "~{PARIN1}"
+      "~{PARIN2}" "~{PAROUT0}" "~{PAROUT2}" "~{RD}" "~{RES}" "~{SEL}" "~{STROBE}"
+      "~{VERASEL}" "~{VERA}" "~{WR}"
       (circuit
         (use_via "Via[0-1]_600:300_um")
       )

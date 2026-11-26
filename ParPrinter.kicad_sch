@@ -5,8 +5,8 @@
 	(uuid "f9618e1d-a9ff-40d3-b6f7-23db14c4b84f")
 	(paper "A4")
 	(title_block
-		(date "2026-10-24")
-		(rev "V1.1")
+		(date "2026-11-25")
+		(rev "V1.2")
 	)
 	(lib_symbols
 		(symbol "74xx:74LS04"
@@ -3133,6 +3133,12 @@
 		(uuid "11a43065-ccbf-48f6-8880-fe8448a69bf6")
 	)
 	(junction
+		(at 184.15 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e86547c-1b54-4986-a09c-93fbb563659f")
+	)
+	(junction
 		(at 220.98 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4184,6 +4190,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 46.99) (xy 184.15 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9479707e-f79c-4ca3-9675-a66e63b2f272")
+	)
+	(wire
+		(pts
 			(xy 86.36 24.13) (xy 87.63 24.13)
 		)
 		(stroke
@@ -4194,7 +4210,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 45.72) (xy 184.15 54.61)
+			(xy 184.15 45.72) (xy 184.15 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4231,6 +4247,16 @@
 			(type default)
 		)
 		(uuid "a007b7f5-b1ad-464b-b9f1-d961cabdd705")
+	)
+	(wire
+		(pts
+			(xy 184.15 46.99) (xy 184.15 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2c51327-3652-489e-9714-93a48fd279d1")
 	)
 	(wire
 		(pts
@@ -6108,6 +6134,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{STROBE}"
+		(shape output)
+		(at 181.61 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8997899f-61c7-482f-893a-e99f5fcfa46e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.4282 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
